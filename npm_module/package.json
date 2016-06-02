@@ -1,0 +1,62 @@
+{
+  "name": "{{0}}",
+  "version": "1.0.0",
+  "description": "{{description}}",
+  "license": "BSD-3-Clause",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavlovml/{{0}}.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pavlovml/{{0}}/issues"
+  },
+  "engines": {
+    "node": ">= 5.0.0",
+    "npm": ">= 3.3.0"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "babel-cli": "^6.2.0",
+    "babel-eslint": "^4.1.5",
+    "babel-jest": "^6.0.1",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-stage-0": "^6.3.13",
+    "eslint": "^2.11.1",
+    "eslint-plugin-babel": "^2.1.1",
+    "jest-cli": "^0.8.0",
+    "standard": "^5.4.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testPathDirs": [
+      "src"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "dist"
+    ],
+    "global": [
+      "jest",
+      "describe",
+      "it",
+      "pit",
+      "expect",
+      "afterEach",
+      "beforeEach"
+    ]
+  }
+}
