@@ -13,10 +13,6 @@
     $ git clone git@github.com:pavlovml/{{0}}.git
     $ make test
 
-To run the tests on file changes:
-
-    $ env WATCH=true make test
-
 ## License
 
 [BSD 3-Clause](https://github.com/pavlovml/{{0}}/blob/master/LICENSE)
