@@ -1,6 +1,6 @@
 FROM node:6.2
 MAINTAINER Alex Kern <alex@pavlovml.com>
- 
+
 # install
 COPY package.json ./
 RUN npm install
